@@ -23,7 +23,6 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          pwd
           npm install
           npm run build --if-present
           npm run test --if-present
@@ -53,5 +52,5 @@ jobs:
         with:
           app-name: 'xyz-rg-test-001'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B1A71B4C40C944BFB096F923F2E94162 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_46A03E6EA2C34976AE564423F4E06D1A }}
           package: .
