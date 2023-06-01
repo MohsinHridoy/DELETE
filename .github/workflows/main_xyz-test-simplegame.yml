@@ -19,11 +19,10 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: '16-lts'
 
       - name: npm install, build, and test
         run: |
-          npm init
           npm install
           npm run build --if-present
           npm run test --if-present
@@ -53,5 +52,5 @@ jobs:
         with:
           app-name: 'xyz-test-simplegame'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0A5887E47C24474CB240BEBE059E77FD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_94F2D1064AEC489FA943AA1336A4EE63 }}
           package: .
