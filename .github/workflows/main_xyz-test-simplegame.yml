@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'xyz-test-simplegame'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AFEE158C94C84BB0ACD103D529F24AA2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0A5887E47C24474CB240BEBE059E77FD }}
           package: .
