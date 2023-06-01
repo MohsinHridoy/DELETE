@@ -23,9 +23,9 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          \tour-management\frontend\npm install
-          \tour-management\frontend\npm run build --if-present
-          \tour-management\frontend\npm run test --if-present
+          npm install
+          npm run build --if-present
+          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'xyz-test-simplegame'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3C26DA3F5D4B4C0DA887A32BC51FDB8C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AFEE158C94C84BB0ACD103D529F24AA2 }}
           package: .
