@@ -1,7 +1,8 @@
 import "./App.css";
+import RadioApp from "./RadioApp";
 
 function App() {
-  return <h1>Hello world</h1>;
+  return <RadioApp />;
 }
 
 export default App;
